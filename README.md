@@ -1,6 +1,5 @@
 
 ![image](https://placehold.co/1200x630/000000/ffffff.png?text=hrittick.)
-![image](https://hrimondal.vercel.app/social.png)
 
 Welcome to the repository for my personal website!  
 

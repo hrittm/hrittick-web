@@ -2,14 +2,15 @@ import React from 'react';
 
 const About: React.FC = () => {
   const technologies = [
-    "JavaScript (ES6+)",
+    "Python",
+    "C",
     "TypeScript",
     "React",
     "Node.js",
-    "Tailwind CSS",
+    "CSS",
     "Next.js",
-    "PostgreSQL",
-    "AWS"
+    "HTML",
+    "Vercel"
   ];
 
   return (
@@ -27,13 +28,13 @@ const About: React.FC = () => {
           
           <div className="space-y-6 text-base md:text-lg text-gray-400 font-light leading-relaxed">
             <p>
-              I'm a software engineer passionate about crafting digital experiences that blend <span className="text-white font-medium">minimalist design</span> with <span className="text-white font-medium">robust engineering</span>.
+              I'm a student passionate about problem solving that blend <span className="text-white font-medium">mathematics</span> and <span className="text-white font-medium">computer science</span>.
             </p>
             <p>
-              My journey began with a curiosity for how things work on the web, evolving into a career building scalable applications. I believe that good code is like good design: invisible, efficient, and purposeful.
+              My journey began with a curiosity for how things work. I believe that good code is like good design: invisible, efficient, and purposeful.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new coffee shops, reading about architecture, or refining my dark mode aesthetic.
+              When I'm not coding or studying, you can find me exploring new ideas, talking with friends, or browsing through webs.
             </p>
           </div>
 
@@ -69,13 +70,13 @@ const About: React.FC = () => {
 
                 <div>
                     <h3 className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">
-                        Focus Areas
+                        Hobbies
                     </h3>
                     <ul className="space-y-4">
                         {[
-                          { name: "Frontend Architecture", color: "bg-blue-400" },
-                          { name: "UI/UX Implementation", color: "bg-purple-400" },
-                          { name: "Performance Optimization", color: "bg-green-400" }
+                          { name: "Problem Solving", color: "bg-blue-400" },
+                          { name: "Listening to Music", color: "bg-purple-400" },
+                          { name: "Photography", color: "bg-green-400" }
                         ].map((item, i) => (
                           <li key={i} className="flex items-center text-sm md:text-base text-gray-300 group/item">
                               <span className={`w-1.5 h-1.5 ${item.color} rounded-full mr-3 shadow-[0_0_8px_rgba(255,255,255,0.3)] group-hover/item:scale-150 transition-transform duration-300`}></span>

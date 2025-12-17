@@ -6,11 +6,15 @@ const About: React.FC = () => {
     "C",
     "TypeScript",
     "React",
-    "Node.js",
-    "CSS",
     "Next.js",
+    "CSS",
     "HTML",
-    "Vercel"
+    "Vercel",
+    "Git",
+    "Linux",
+    "Bash",
+    "SQL",
+    "AWS",
   ];
 
   return (
@@ -31,10 +35,11 @@ const About: React.FC = () => {
               I'm a student passionate about problem solving that blend <span className="text-white font-medium">mathematics</span> and <span className="text-white font-medium">computer science</span>.
             </p>
             <p>
-              My journey began with a curiosity for how things work. I believe that good code is like good design: invisible, efficient, and purposeful.
+              I love the splendid elegence of mathe and CS, and I'm fascinated by how they intertwine to create innovative solutions. I want to leverage this synergy to build impactful software that can make a difference. 
+              I desire to continuously acheive greater application of computer as an artistic instrument. Demystifying artistic endeavors provides immense joy and satisfaction.
             </p>
             <p>
-              When I'm not coding or studying, you can find me exploring new ideas, talking with friends, or browsing through webs.
+              When I'm not coding or studying, you can find me exploring new ideas, texting with chatmate, or sitting lonely.
             </p>
           </div>
 

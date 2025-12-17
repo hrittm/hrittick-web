@@ -1,7 +1,7 @@
 
 ![image](https://placehold.co/1200x630/000000/ffffff.png?text=hrittick.)
 
-Welcome to the repository for my web!  🕸️
+Yoo!! The repository is for my web! 🕸️  
 
 This website is developed with the help of [Google AI Studio](https://aistudio.google.com/), and the design is inspired by [chronark.com](https://chronark.com). It is built with [TypeScript](https://www.typescriptlang.org/) and [HTML](https://en.wikipedia.org/wiki/HTML) and deployed with [Vercel](https://vercel.com/).
 

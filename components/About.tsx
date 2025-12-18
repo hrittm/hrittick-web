@@ -32,7 +32,7 @@ const About: React.FC = () => {
               I'm a high school student passionate about problem solving that blend <span className="text-white font-medium">mathematics</span> and <span className="text-white font-medium">computer science</span>.
             </p>
             <p>
-              I am a fan of the splendid elegence of math and CS. I want to leverage this synergy to build impactful software that can make a difference. 
+              I am a fan of the splendid elegance of math and CS. I want to leverage this synergy to build impactful software that can make a difference. 
               I desire to continuously acheive greater application of computer as an artistic instrument. Demystifying artistic endeavors provides immense joy and satisfaction.
             </p>
             <p>

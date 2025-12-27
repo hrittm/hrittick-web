@@ -28,12 +28,18 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex gap-8 pointer-events-auto">
+      <div className="flex gap-4 md:gap-8 pointer-events-auto">
         <a 
           href="#about" 
-          className="text-xs md:text-sm font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-widest"
+          className="text-[10px] md:text-xs font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-widest"
         >
           About
+        </a>
+        <a 
+          href="#projects" 
+          className="text-[10px] md:text-xs font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-widest"
+        >
+          Projects
         </a>
       </div>
     </nav>

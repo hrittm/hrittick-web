@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       title: "EdVault",
       description: "[ON PROGRESS] An AI-powered educational platform that personalizes learning experiences using machine learning algorithms to adapt content based on student performance and preferences.",
       tech: ["Python", "Typescript", "React", "FastAPI", "TensorFlow"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/hrittm/edvault",
       isFeatured: false
     },
     {

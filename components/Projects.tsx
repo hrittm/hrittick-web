@@ -18,14 +18,13 @@ const Projects: React.FC = () => {
       tech: ["Python", "Typescript", "React", "FastAPI", "TensorFlow"],
       githubUrl: "https://github.com/hrittm/edvault",
       liveUrl: "https://hrittm.github.io/edvault",
-      isFeatured: true
+      isFeatured: false
     },
     {
       title: "Dotfiles",
       description: "[ON PROGRESS] A comprehensive collection of configuration files and scripts to set up a personalized development environment across multiple operating systems, focusing on productivity and efficiency.",
       tech: ["Shell", "Vim", "Tmux", "Git", "Zsh", "Lua", "Fish"],
       githubUrl: "https://github.com/hrittm/dotfiles",
-      liveUrl: "https://example.com",
       isFeatured: false
     },
     {

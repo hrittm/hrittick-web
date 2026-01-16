@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         {/* Copyright / Left Text */}
         <div className="flex-1 text-center md:text-left order-2 md:order-1">
           <p className="text-[10px] text-gray-600 font-mono uppercase tracking-wider">
-            Est. 2025 &copy; Hrittick
+            Est. 2026 &copy; Hrittick
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         {/* Status / Right Text */}
         <div className="flex-1 text-center md:text-right order-3">
           <p className="text-[10px] text-gray-600 font-mono uppercase tracking-wider">
-            :: On Development
+            :: Learning
           </p>
         </div>
       </div>

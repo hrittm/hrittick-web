@@ -80,7 +80,7 @@ const About: React.FC = () => {
                     <ul className="space-y-4">
                         {[
                           { name: "Problem Solving", color: "bg-blue-400" },
-                          { name: "Listening to Music", color: "bg-purple-400" },
+                          { name: "Playing Football", color: "bg-purple-400" },
                           { name: "Photography", color: "bg-green-400" }
                         ].map((item, i) => (
                           <li key={i} className="flex items-center text-sm md:text-base text-gray-300 group/item">

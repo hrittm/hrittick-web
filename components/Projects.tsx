@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     {
       title: "hrittick-web",
       description: "A personal portfolio website built with React and TypeScript, featuring custom animations and a dark mode toggle. Optimized for performance and accessibility.",
-      tech: ["React", "TypeScript"],
+      tech: ["React", "TypeScript", "HTML", "CSS", "Vercel"],
       githubUrl: "https://github.com/hrittm/hrittick-web",
       liveUrl: "https://hrittm.vercel.app",
       isFeatured: true
@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
     {
       title: "EdVault",
       description: "[ON PROGRESS] An open-source educational platform that leverages AI to provide personalized learning experiences, interactive content, and real-time feedback for students and educators.",
-      tech: ["Python", "Typescript", "React", "FastAPI", "TensorFlow"],
+      tech: ["Typescript", "React"],
       githubUrl: "https://github.com/hrittm/edvault",
       liveUrl: "https://hrittm.github.io/edvault",
       isFeatured: false
@@ -28,10 +28,11 @@ const Projects: React.FC = () => {
       isFeatured: false
     },
     {
-      title: "// Coming Soon",
-      description: "A new project that is currently under development. Stay tuned for more details!",
-      tech: ["Details Coming Soon"  ],
-      githubUrl: "#",
+      title: "mss.edu.bd",
+      description: "A modern and responsive website for Mokamia Secondary School, designed to proficiently represent school details, values, and updates to students, parents, and the community.",
+      tech: ["TypeScript", "HTML", "CSS", "Vercel"],  
+      githubUrl: "https://github.com/hrittm/mokamiass",
+      liveUrl: "https://mokamiass.vercel.app",
       isFeatured: false
     }
   ];

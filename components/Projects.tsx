@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "mss.edu.bd",
-      description: "A modern and responsive website for Mokamia Secondary School, designed to profficiently represent school details, values, and updates to students, parents, and the community.",
+      description: "A modern and responsive website for Mokamia Secondary School, designed to proficiently represent school details, values, and updates to students, parents, and the community.",
       tech: ["TypeScript", "HTML", "CSS", "Vercel"],  
       githubUrl: "https://github.com/hrittm/mokamiass",
       liveUrl: "https://mokamiass.vercel.app",

@@ -33,8 +33,5 @@ npm run dev
 ```
 ---
 
-> [!NOTE]
-> The website is still on development.
-
 and   
 #### THANKS. 🌸💕

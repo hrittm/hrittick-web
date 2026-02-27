@@ -13,18 +13,18 @@ const Projects: React.FC = () => {
       isFeatured: true
     },
     {
-      title: "EdVault",
-      description: "[ON PROGRESS] An open-source educational platform that leverages AI to provide personalized learning experiences, interactive content, and real-time feedback for students and educators.",
-      tech: ["Typescript", "React"],
-      githubUrl: "https://github.com/hrittm/edvault",
-      liveUrl: "https://hrittm.github.io/edvault",
-      isFeatured: false
+      title: "dotfiles",
+      description: "[IN PROGRESS] A comprehensive collection of configuration files and scripts to set up a personalized development environment across multiple operating systems, focusing on productivity and efficiency.",
+      tech: ["Shell", "Vim", "Tmux", "Git", "Zsh", "Hypr", "Fish", "TOML", "JSON"],
+      githubUrl: "https://github.com/hrittm/dotfiles",
+      isFeatured: true
     },
     {
-      title: "Dotfiles",
-      description: "[ON PROGRESS] A comprehensive collection of configuration files and scripts to set up a personalized development environment across multiple operating systems, focusing on productivity and efficiency.",
-      tech: ["Shell", "Vim", "Tmux", "Git", "Zsh", "Lua", "Fish"],
-      githubUrl: "https://github.com/hrittm/dotfiles",
+      title: "edvault",
+      description: "[IN PROGRESS] An open-source educational platform that leverages AI to provide personalized learning experiences, interactive content, and real-time feedback for students and educators.",
+      tech: ["TypeScript", "React"],
+      githubUrl: "https://github.com/hrittm/edvault",
+      liveUrl: "https://hrittm.github.io/edvault",
       isFeatured: false
     },
     {

@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+<Base title="Contact" description="Get in touch with Hrittick.">
+  <section id="top">
+    <h1 class="page-title">Contact</h1>
+    <a class="big" href={`mailto:${site.email}`}>{site.email}</a>
+    <div class="links">
+      {site.socials.map((s) => <a href={s.href} target="_blank" rel="noopener">{s.label}</a>)}
+    </div>
+  </section>
+</Base>

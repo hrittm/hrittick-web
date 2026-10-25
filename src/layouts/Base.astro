@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+
+interface Props { title?: string; description?: string }
+const { title, description = site.description } = Astro.props;
+const path = Astro.url.pathname;
+const fullTitle = title ? `${title} · ${site.name}` : site.name;
+const canonical = new URL(path, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={site.name} href="/rss.xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="top">
+        <a href="/">hrittick.</a>
+        <div>
+          {site.nav.map((n) => (
+            <a href={n.href} class:list={[{ cur: path.startsWith(n.href) }]}>{n.label}</a>
+          ))}
+        </div>
+      </nav>
+      <main><slot /></main>
+      <footer>
+        <span>© {new Date().getFullYear()} {site.name}</span>
+        <span><a href="#top">Back to top</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

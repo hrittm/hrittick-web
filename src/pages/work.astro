@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import { projects } from '../data/site';
+---
+<Base title="Work" description="Projects by Hrittick.">
+  <section id="top">
+    <h1 class="page-title">Work</h1>
+    <div>
+      {projects.map((p) => (
+        <div class="row" tabindex="0">
+          <h3>{p.name}</h3>
+          <span class="yr">{p.tag}</span>
+          <p>
+            {p.description}
+            {p.href && <> <a class="inline" href={p.href} target="_blank" rel="noopener">View project</a></>}
+          </p>
+        </div>
+      ))}
+    </div>
+    <div class="next"><a href="/skills/">Next: Skills</a></div>
+  </section>
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.row').forEach((r) => {
+    r.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) return;
+      r.classList.toggle('open');
+    });
+    r.addEventListener('keydown', (e) => { if (e.key === 'Enter') r.classList.toggle('open'); });
+  });
+</script>

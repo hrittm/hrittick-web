@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { skills } from '../data/site';
+---
+<Base title="Skills" description="Tools and skills Hrittick uses.">
+  <section id="top">
+    <h1 class="page-title">Skills</h1>
+    {skills.map((g) => (
+      <div class="group">
+        <h3>{g.group}</h3>
+        <div class="tags">{g.items.map((i) => <span>{i}</span>)}</div>
+      </div>
+    ))}
+    <div class="next"><a href="/blog/">Next: Blog</a></div>
+  </section>
+</Base>

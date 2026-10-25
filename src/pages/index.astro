@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+const blurbs: Record<string, string> = {
+  About: 'Who I am', Work: 'Things I built', Skills: 'What I use', Blog: 'Things I write', Contact: 'Say hello',
+};
+---
+<Base>
+  <header class="hero" id="top">
+    <h1 class="name" aria-label="Hrittick">
+      <span>Hrit</span><span>tick.</span>
+      <span class="ghost" aria-hidden="true"><span>Hrit</span><span>tick.</span></span>
+    </h1>
+    <div class="meta">
+      <span>Student [ philomath & tech-savvy ]</span>
+      <span>Local time <b id="clock" data-tz={site.timeZone}>--:--</b></span>
+    </div>
+  </header>
+  <nav class="menu" aria-label="Pages">
+    {site.nav.map((n) => <a href={n.href}>{n.label} <small>{blurbs[n.label]}</small></a>)}
+  </nav>
+</Base>
+
+<script>
+  const hero = document.querySelector<HTMLElement>('.hero')!;
+  const name = document.querySelector<HTMLElement>('.name')!;
+  function move(e: MouseEvent | TouchEvent) {
+    const r = name.getBoundingClientRect();
+    const p = 'touches' in e ? e.touches[0] : e;
+    name.style.setProperty('--x', p.clientX - r.left + 'px');
+    name.style.setProperty('--y', p.clientY - r.top + 'px');
+  }
+  hero.addEventListener('mousemove', move);
+  hero.addEventListener('touchmove', (e) => { hero.classList.add('on'); move(e); }, { passive: true });
+  hero.addEventListener('touchend', () => hero.classList.remove('on'));
+
+  const c = document.getElementById('clock')!;
+  const tick = () => {
+    try {
+      c.textContent = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: c.dataset.tz });
+    } catch {}
+  };
+  tick();
+  setInterval(tick, 30000);
+</script>
